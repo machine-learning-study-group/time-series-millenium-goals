@@ -13,23 +13,24 @@ There are two files in the dataset
 * training data which gives the values of particular metrics (AKA series) for a given country for the years 1972-2007 (many have years missing)
 * submission data which gives us the row IDs we need to predict one year (2008) and five years (2012) into the future
 
-## Update 15/5/2019
+## Update 22/5/2019
 
 ### Changes from last session:
 currently working on 2-prepare-data.ipynb
-we have been working on finding correlations between 1 target indicator for a country and other indicators in that same country.
-* Plotting one target indicator [Environmental Sustainability (7.8)] for Afghanistan
-* Plotting all indicators except Environmental Sustainability (7.8) for Afghanistan
-* Plotting all indicators except Environmental Sustainability (7.8) for Afghanistan for 2001 to 2007
-* Enlisting top correlated features against target feature [Environmental Sustainability (7.8)]
-* Plotting the top correlated indicators for Afghanisthan between 2000 to 2007
+* normalize the data
+* Plotting again the top correlated indicators for Afghanisthan between 2000 to 2007
+* rework the training and visualisation of the data (to be moved in spot check algos notebook) so that we train on all data until 2002 and then test on 2002 - 2007. Then compare visually true values vs predictions
+
+### Homework
+- learn about evaluating accuracy in regression problems. Which metrics should we use ?
+- learn about applying polynomial models
 
 ### Next steps
 
-* To predict one indicator, we can maybe use indicators on the similar goal, or the indicators from close countries (can use our continent column that we added). To be confirmed
-* Improve our model training, by testing it on the training data and evaluating the accuracy of the model
-* Rerun predictions using correlations explored above and see if they improve our results
+* evaluate the accuracy of the model
 * We could use a more sophisticated model than linear regression to improve the accuracy of our model (try polynomial for a start ?)
+* To predict one indicator, we can maybe use indicators on the similar goal, or the indicators from close countries (can use our continent column that we added). To be confirmed
+* Rerun predictions using correlations explored above and see if they improve our results
 
 * find out what to do with missing data. drop them ? fill them ?
 
