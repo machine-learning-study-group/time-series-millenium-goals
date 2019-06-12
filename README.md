@@ -16,26 +16,20 @@ There are two files in the dataset
 * training data which gives the values of particular metrics (AKA series) for a given country for the years 1972-2007 (many have years missing)
 * submission data which gives us the row IDs we need to predict one year (2008) and five years (2012) into the future
 
-## Update 22/5/2019
+## Update 12/6/2019
 
 ### Changes from last session:
 currently working on 2-prepare-data.ipynb
-* normalize the data
-* Plotting again the top correlated indicators for Afghanisthan between 2000 to 2007
-* rework the training and visualisation of the data (to be moved in spot check algos notebook) so that we train on all data until 2002 and then test on 2002 - 2007. Then compare visually true values vs predictions
+* add polynomial features
+* train on linear regression / evaluate / plot and compare with and without poly features
 
 ### Homework
-- learn about evaluating accuracy in regression problems. Which metrics should we use ?
-- learn about applying polynomial models
+- learn about applying polynomial features on multiple indicators (currently only worked on 1 indicator at a time)
 
 ### Next steps
 
-* evaluate the accuracy of the model
-* We could use a more sophisticated model than linear regression to improve the accuracy of our model (try polynomial for a start ?)
-* To predict one indicator, we can maybe use indicators on the similar goal, or the indicators from close countries (can use our continent column that we added). To be confirmed
-* Rerun predictions using correlations explored above and see if they improve our results
+* To predict one indicator, we can use indicators on the similar goal, or the indicators from close countries (can use our continent column that we added).
 
-* find out what to do with missing data. drop them ? fill them ?
 
 ### What we have learned so far
 * We can problem frame this as a regression problem. Given N years of data for a metric, predict next year
