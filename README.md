@@ -16,19 +16,31 @@ There are two files in the dataset
 * training data which gives the values of particular metrics (AKA series) for a given country for the years 1972-2007 (many have years missing)
 * submission data which gives us the row IDs we need to predict one year (2008) and five years (2012) into the future
 
-## Update 19/6/2019
+## Update 3/7/2019
 
 ### Changes from last session:
 currently working on 4-improve-results.ipynb
-* work on multivariate cross correlation
+looked  at work from https://github.com/MichiganDataScienceTeam/undevgoals on the project
+learnings: 
+- they replace missing values with mean (or other)
+- they drop years only if they cannot be filled (rather than drop the 20 years like we do)
+- used pycountry to get continent for each series
+- did little preprocessing and focused on comparing statut quo (previous value) vs ARIMA vs VAR with different configurations
 
-### Homework
-- learn about techniques to predict one indicator using others. In previous session we tried a bit to reinvent the wheel with cross correlation, there should be an easier way
+started looking at other forecasting models: ARIMA, VAR
+https://www.datascience.com/blog/time-series-forecasting-machine-learning-differences
+https://en.m.wikipedia.org/wiki/Vector_autoregression
+https://www.statsmodels.org/dev/vector_ar.html#var
+
+We discovered that VAR helps with multivariate analysis (analyse the lagging within series and between themselves).
+
+We tried fitting the VAR model but ran out of time
+
 
 ### Next steps
 
-* To predict one indicator, we can use indicators on the similar goal, or the indicators from close countries (can use our continent column that we added).
-
+- fit VAR model on submission data. Run predictions with similar preprocessing from before. Evaluate and compare with linear regression using polynomial features
+- apply learnings above
 
 ### What we have learned so far
 * We can problem frame this as a regression problem. Given N years of data for a metric, predict next year
