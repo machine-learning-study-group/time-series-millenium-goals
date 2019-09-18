@@ -105,3 +105,4 @@ venv.bak/
 
 # project specific
 data/
+bin/
