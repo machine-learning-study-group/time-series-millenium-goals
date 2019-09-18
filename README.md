@@ -12,25 +12,45 @@ There are five notebooks corresponding to the stages described in https://machin
 * 4-improve-results.ipynb
 * 5-present-results.ipynb
 
++ last experiments in LSTM_EXPERIMENTS folder
+
 There are two files in the dataset
 * training data which gives the values of particular metrics (AKA series) for a given country for the years 1972-2007 (many have years missing)
 * submission data which gives us the row IDs we need to predict one year (2008) and five years (2012) into the future
 
-## Update 4/9/2019
+## Update 18/9/2019
 
 ### Changes from last session:
-currently working on 4-improve-results.ipynb
-looked  at work from https://machinelearningmastery.com/multivariate-time-series-forecasting-lstms-keras/
-- started applying to our project but got lost :).
+showcase from Tiri on his work based on https://machinelearningmastery.com/how-to-develop-lstm-models-for-time-series-forecasting/ and further discussions
+preprocessing + built LSTM model with multivariate forecasting 
 
 ### Next steps
 
 - run tutorial together from https://machinelearningmastery.com/multivariate-time-series-forecasting-lstms-keras/
 - carry on applying after better understanding how it all works
 
+
 ### Homework
 
-- go through https://machinelearningmastery.com/convert-time-series-supervised-learning-problem-python/ to understand how the data are prepared
+run 2 notebooks from LSTM_EXPERIMENTS folder to prepare the data and train the model
+pick a topic for improvement below, have a go, showcase next time in 10min max
+Compare results before after improvement by checking against last 5 years during training + submitting to united nations website (edited) 
+
+#### Topics for improvement:
+- improve cleaning/filtering of the data
+try on everything
+Feature selection not based on correlations
+- Improve the preparation of the data:
+features engineering
+use polynomial features in the interpolation of the data
+find a way to use continents/countries
+features reduction: PCA
+- improve model training:
+add dropout
+change architecture
+predict 1 year from 5 years instead of 5 from 5 (and predict 1 year at a time 2002 to 2007, using predictions) (edited) 
+Jeremie Charlet 8:18 PM
+
 
 
 ### What we have learned so far
