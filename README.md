@@ -37,19 +37,18 @@ pick a topic for improvement below, have a go, showcase next time in 10min max
 Compare results before after improvement by checking against last 5 years during training + submitting to united nations website (edited) 
 
 #### Topics for improvement:
-- improve cleaning/filtering of the data
-try on everything
-Feature selection not based on correlations
-- Improve the preparation of the data:
-features engineering
-use polynomial features in the interpolation of the data
-find a way to use continents/countries
-features reduction: PCA
-- improve model training:
-add dropout
-change architecture
-predict 1 year from 5 years instead of 5 from 5 (and predict 1 year at a time 2002 to 2007, using predictions) (edited) 
-Jeremie Charlet 8:18 PM
+improve cleaning/filtering of the data
+- try on everything
+- Feature selection not based on correlations
+Improve the preparation of the data:
+- features engineering
+- use polynomial features in the interpolation of the data
+- find a way to use continents/countries
+- features reduction: PCA
+improve model training:
+- add dropout
+- change architecture
+- predict 1 year from 5 years instead of 5 from 5 (and predict 1 year at a time 2002 to 2007, using predictions)
 
 
 
