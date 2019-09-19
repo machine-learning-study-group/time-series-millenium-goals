@@ -40,11 +40,13 @@ Compare results before after improvement by checking against last 5 years during
 improve cleaning/filtering of the data
 - try on everything
 - Feature selection not based on correlations
+
 Improve the preparation of the data:
 - features engineering
 - use polynomial features in the interpolation of the data
 - find a way to use continents/countries
 - features reduction: PCA
+
 improve model training:
 - add dropout
 - change architecture
