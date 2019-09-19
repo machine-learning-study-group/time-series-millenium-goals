@@ -24,13 +24,8 @@ There are two files in the dataset
 showcase from Tiri on his work based on https://machinelearningmastery.com/how-to-develop-lstm-models-for-time-series-forecasting/ and further discussions
 preprocessing + built LSTM model with multivariate forecasting 
 
-### Next steps
 
-- run tutorial together from https://machinelearningmastery.com/multivariate-time-series-forecasting-lstms-keras/
-- carry on applying after better understanding how it all works
-
-
-### Homework
+### Homework for next week
 
 run 2 notebooks from LSTM_EXPERIMENTS folder to prepare the data and train the model
 pick a topic for improvement below, have a go, showcase next time in 10min max
