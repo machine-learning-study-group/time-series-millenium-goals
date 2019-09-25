@@ -18,6 +18,21 @@ There are two files in the dataset
 * training data which gives the values of particular metrics (AKA series) for a given country for the years 1972-2007 (many have years missing)
 * submission data which gives us the row IDs we need to predict one year (2008) and five years (2012) into the future
 
+
+### Retrieve data
+The data directory is ignored by git and you need to retrieve manually the resources:
+
+- Extract the contents of this zip file into the data/ subdirectory: 
+https://s3.amazonaws.com/drivendata/data/1/public/cd238763-ed29-4a46-8584-f9334d57ec94.zip you should have data/TrainingSet.csv
+
+- download this file and put it in data/ folder: 
+https://s3.amazonaws.com/drivendata/data/1/public/SubmissionRows.csv
+
+- You will need as well to put this file in the data/ folder: 
+https://gist.githubusercontent.com/pamelafox/986163/raw/f5f9db4f1b287804fd07ffb3296ed0036292bc7a/countryinfo.py
+
+
+
 ## Update 18/9/2019
 
 ### Changes from last session:
