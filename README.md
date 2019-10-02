@@ -33,18 +33,16 @@ https://gist.githubusercontent.com/pamelafox/986163/raw/f5f9db4f1b287804fd07ffb3
 
 
 
-## Update 18/9/2019
+## Update 2/10/2019
 
 ### Changes from last session:
-showcase from Tiri on his work based on https://machinelearningmastery.com/how-to-develop-lstm-models-for-time-series-forecasting/ and further discussions
-preprocessing + built LSTM model with multivariate forecasting 
-
+submit our work on linear regression and polynomial regression. 
+only linear reg is above the baseline score, and by using 3 years.
+work on LSTM is not providing good results
+we need to go back to correlated indicators and try a simple linear model to see if we can improve from baseline
 
 ### Homework for next week
-
-run 2 notebooks from LSTM_EXPERIMENTS folder to prepare the data and train the model
-pick a topic for improvement below, have a go, showcase next time in 10min max
-Compare results before after improvement by checking against last 5 years during training + submitting to united nations website (edited) 
+No homework for next week
 
 #### Topics for improvement:
 improve cleaning/filtering of the data
