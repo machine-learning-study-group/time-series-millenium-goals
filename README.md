@@ -4,20 +4,9 @@ Analyse a dataset showing progress towards the United Nations development goals 
 Project details:
 https://www.drivendata.org/competitions/1/united-nations-millennium-development-goals
 
-There are five notebooks corresponding to the stages described in https://machinelearningmastery.com/process-for-working-through-machine-learning-problems/
-
-* 1-define-the-problem.ipynb
-* 2-prepare-data.ipynb 
-* 3-spot-check-algorithms.ipynb
-* 4-improve-results.ipynb
-* 5-present-results.ipynb
-
-+ last experiments in LSTM_EXPERIMENTS folder
-
 There are two files in the dataset
 * training data which gives the values of particular metrics (AKA series) for a given country for the years 1972-2007 (many have years missing)
 * submission data which gives us the row IDs we need to predict one year (2008) and five years (2012) into the future
-
 
 ### Retrieve data
 The data directory is ignored by git and you need to retrieve manually the resources:
@@ -32,17 +21,16 @@ https://s3.amazonaws.com/drivendata/data/1/public/SubmissionRows.csv
 https://gist.githubusercontent.com/pamelafox/986163/raw/f5f9db4f1b287804fd07ffb3296ed0036292bc7a/countryinfo.py
 
 
-
-## Update 2/10/2019
+## Update 9/10/2019
 
 ### Changes from last session:
-submit our work on linear regression and polynomial regression. 
-only linear reg is above the baseline score, and by using 3 years.
-work on LSTM is not providing good results
-we need to go back to correlated indicators and try a simple linear model to see if we can improve from baseline
+work on Linear_Regression_Model notebook
+used work on linear regression with polynomial features from Tiri as baseline
+evaluate and plot correlated indicators using tutorial from http://drivendata.co/blog/world-bank-getting-started/
 
-### Homework for next week
-No homework for next week
+### Next session
+retrain our linear model using correlated indicators
+
 
 #### Topics for improvement:
 improve cleaning/filtering of the data
